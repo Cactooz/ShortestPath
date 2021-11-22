@@ -35,5 +35,8 @@ public class Main {
 			System.out.print("V" + (n+1) + " -> Y: ");
 			c[n] = input.nextFloat();
 		}
+		
+		System.out.println("Kortaste vägen är: " + GetShortestPath.Distance(a,b,c));
+		System.out.println("Stationerna är: U" + GetShortestPath.Stations(a,b,c)[0] + " och V" + GetShortestPath.Stations(a,b,c)[1]);
     }
 }
