@@ -22,16 +22,16 @@ public class Main {
 		float[] c = new float[height[1]];
 		
 		System.out.println("Längd mellan stationerna");
-		for (int m = 0; m < height[0]; m++) {
+		for (int m = 0; m < a.length; m++) {
 			System.out.print("X -> U" + (m+1) + ": ");
 			a[m] = input.nextFloat();
-			for (int n = 0; n < height[1]; n++) {
+			for (int n = 0; n < c.length; n++) {
 				System.out.print("U" + (m+1) + " -> V" + (n+1) + ": ");
 				b[m][n] = input.nextFloat();
 			}
 		}
 		
-		for (int n = 0; n < height[1]; n++) {
+		for (int n = 0; n < c.length; n++) {
 			System.out.print("V" + (n+1) + " -> Y: ");
 			c[n] = input.nextFloat();
 		}
