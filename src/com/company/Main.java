@@ -9,11 +9,11 @@ public class Main {
 	
 		System.out.print("Hur många steg av stationer: ");
 		int width = input.nextInt();
-		int height;
+		int[] height = new int[width];
 	
 		for (int i = 0; i < width; i++) {
 			System.out.print("Stationer på nivå " + (i+1) + ": ");
-			height = input.nextInt();
+			height[i] = input.nextInt();
 		}
     }
 }
