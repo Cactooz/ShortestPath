@@ -7,8 +7,9 @@ public class Main {
     public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 	
-		System.out.print("Hur många steg av stationer: ");
-		int width = input.nextInt();
+		//System.out.print("Hur många steg av stationer: ");
+		//int width = input.nextInt();
+		int width = 2;
 		int[] height = new int[width];
 	
 		for (int i = 0; i < width; i++) {
