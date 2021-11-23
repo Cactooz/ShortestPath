@@ -27,20 +27,10 @@ public class GetShortestPath {
 	
 	//Get the distance of the shortest path
 	public static float Distance(float[] a, float[][] b, float[] c) {
-		//Set the minDistance to the first elements length
-		float minDistance = a[0] + b[0][0] + c[0];
+		//Get the stations needed
+		int[] stations = Stations(a, b, c);
 		
-		//Loop though all the possible paths
-		for (int m = 0; m < a.length; m++) {
-			for (int n = 0; n < c.length; n++) {
-				float distance = a[m] + b[m][n] + c[n];
-				
-				//Replace the minDistance if the current distance is smaller
-				if (distance < minDistance) {
-					minDistance = distance;
-				}
-			}
-		}
-		return minDistance;
+		//Return the distance
+		return a[stations[0]]+b[stations[0]][stations[1]]+c[stations[1]];
 	}
 }
