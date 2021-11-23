@@ -3,7 +3,7 @@ package com.company;
 public class GetShortestPath {
 	
 	//Get the stations passed in the shortest path
-	public static int[] Stations(float[] a, float[][] b, float[] c) {
+	public static int[] stations(float[] a, float[][] b, float[] c) {
 		//Set the minDistance to the first elements length
 		float minDistance = a[0] + b[0][0] + c[0];
 		
@@ -26,9 +26,9 @@ public class GetShortestPath {
 	}
 	
 	//Get the distance of the shortest path
-	public static float Distance(float[] a, float[][] b, float[] c) {
+	public static float distance(float[] a, float[][] b, float[] c) {
 		//Get the stations needed
-		int[] stations = Stations(a, b, c);
+		int[] stations = stations(a, b, c);
 		
 		//Return the distance
 		return a[stations[0]]+b[stations[0]][stations[1]]+c[stations[1]];
