@@ -40,8 +40,13 @@ public class Main {
 			c[n] = input.nextFloat();
 		}
 		
-		//Print the result
+		//Print the shortest path
 		System.out.println("Kortaste vägen är: " + GetShortestPath.Distance(a,b,c));
-		System.out.println("Stationerna är: U" + GetShortestPath.Stations(a,b,c)[0] + " och V" + GetShortestPath.Stations(a,b,c)[1]);
+	
+		//Get the stations
+		int[] stations = GetShortestPath.Stations(a, b, c);
+		
+		//Print the stations
+		System.out.println("Stationerna är: U" + (stations[0]+1) + " och V" + (stations[1]+1));
     }
 }
